@@ -1,0 +1,32 @@
+package com.pablomonteserin;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int primitiva1 =3;
+		int primitiva2= 5;
+		primitiva2 = primitiva1;
+		primitiva1=8;
+		
+		System.out.println(primitiva2);
+		
+		
+		
+		Amante objeto1= new Amante();
+		Amante objeto2 = new Amante();
+		objeto1.nombre= "Silvia";
+		objeto2.nombre="Soraya";
+		objeto2 = objeto1;
+		
+		objeto1.nombre="Raquel";
+		System.out.println(a2.nombre);
+		
+		//menti.com  34 64 63
+		
+		
+	}
+	
+	
+}
+ 
+

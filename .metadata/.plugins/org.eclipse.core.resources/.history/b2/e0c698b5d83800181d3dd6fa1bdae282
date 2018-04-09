@@ -1,0 +1,16 @@
+package com.pablomonteserin;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("la mejor cosa del mundo");
+		
+		Amante amante = null;
+		
+		amante.amar();
+
+		
+	}
+
+}
+ 

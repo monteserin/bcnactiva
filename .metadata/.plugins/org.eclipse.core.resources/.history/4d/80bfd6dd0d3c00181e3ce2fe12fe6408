@@ -1,0 +1,18 @@
+package com.pablomonteserin;
+
+import java.util.Scanner;
+
+public class Main {
+
+
+	
+	public static void main(String[] args) {
+		Scanner lector = new Scanner(System.in);
+		System.out.println("Introduce el alto: ");
+		int alto = lector.nextInt();
+	}
+	
+	
+}
+ 
+

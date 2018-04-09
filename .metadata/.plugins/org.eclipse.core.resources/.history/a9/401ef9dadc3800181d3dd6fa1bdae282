@@ -1,0 +1,32 @@
+package com.pablomonteserin;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i =3;
+		int j= 5;
+		j = i;
+		i=8;
+		
+		System.out.println(j);
+		
+		
+		
+		Amante a1= new Amante();
+		Amante a2 = new Amante();
+		a1.nombre= "Silvia";
+		a2.nombre="Soraya";
+		a2 = a1;
+		
+		a1.nombre="Raquel";
+		System.out.println(a2.nombre);
+		
+		
+		
+		
+	}
+	
+	
+}
+ 
+
