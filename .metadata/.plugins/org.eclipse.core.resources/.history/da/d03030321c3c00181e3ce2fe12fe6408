@@ -15,9 +15,11 @@ public class Main4 {
 	
 		
 		//2 - CALCULO DEL RESULTADO
-		String mensaje1="es negativo";
+		String mensaje1="";
 		if(n>=0) {
 			mensaje1 ="es positivo";
+		}else {
+			mensaje1 ="es negativo";
 		}
 		
 		String mensaje2="";

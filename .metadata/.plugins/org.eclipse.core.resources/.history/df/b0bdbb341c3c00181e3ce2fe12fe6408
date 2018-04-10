@@ -18,6 +18,8 @@ public class Main4 {
 		String mensaje1="es negativo";
 		if(n>=0) {
 			mensaje1 ="es positivo";
+		}else {
+			mensaje1 =;
 		}
 		
 		String mensaje2="";
