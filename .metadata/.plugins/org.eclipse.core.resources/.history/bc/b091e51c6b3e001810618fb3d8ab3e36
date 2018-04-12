@@ -1,0 +1,11 @@
+package com.pablomonteserin;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		System.out.println("Introduce un número");
+		Scanner lector = new Scanner(System.in);
+
+	}
+
+}
