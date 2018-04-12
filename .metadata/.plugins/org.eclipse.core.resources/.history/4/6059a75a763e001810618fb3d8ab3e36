@@ -1,0 +1,17 @@
+package com.pablomonteserin;
+
+public class Proba {
+
+	public void saludar(){
+		System.out.println("Buenas tardes!");
+	}
+
+	public static void main(String[] args) {
+		MetodoNoDevuelveNada metodoNoDevuelveNada;
+		metodoNoDevuelveNada = new MetodoNoDevuelveNada();
+		metodoNoDevuelveNada.saludar();
+		//La siguiente línea daría error porque el método no devuelve nada
+		//String valorDevuelto = MetodoNoDevuelveNada.saludar();
+	}
+
+}

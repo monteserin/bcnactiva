@@ -1,0 +1,7 @@
+package com.pablomonteserin.funciones;
+
+public class CalculaCubo {
+	public static void main(String[] args) {
+
+	}
+}
