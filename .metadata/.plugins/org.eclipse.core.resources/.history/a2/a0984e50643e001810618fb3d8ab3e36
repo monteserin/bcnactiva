@@ -1,0 +1,13 @@
+package com.pablomonteserin;
+
+import java.util.Scanner;
+
+public class ValidaNombre {
+
+	public static void main(String[] args) {
+		System.out.println("Introduce tu nombre");
+		Scanner lector = new Scanner(System.in);
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.pablomonteserin;
+
+public class CalcularFactorial {
+
+	public static void main(String[] args) {
+		int n = 2;
+		int r = n;
+		
+		
+
+	}
+
+}
