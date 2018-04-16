@@ -1,0 +1,13 @@
+package com.pablomonteserin.funciones;
+
+public class CalculadoraConReturn {
+
+	public static void main(String[] args) {
+		Scanner lector = new Scanner(System.in);
+		System.out.println("Introduce el primer número:");
+		System.out.println("Introduce el segundo número:");
+		System.out.println("Introduce la operación a realizar:");
+
+	}
+
+}
