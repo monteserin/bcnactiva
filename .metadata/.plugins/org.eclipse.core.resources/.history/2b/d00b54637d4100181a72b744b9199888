@@ -1,0 +1,15 @@
+package com.pablomonteserin.funciones;
+
+public class TeoriaFunciones {
+
+	public static void main(String[] args) {
+		TeoriaFunciones obj =  new TeoriaFunciones();
+		obj.saludar();
+
+	}
+	
+	public void saludar() {
+		System.out.println("hola");
+	}
+
+}
