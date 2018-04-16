@@ -1,0 +1,12 @@
+package com.pablomonteserin.funciones;
+
+public class Rectangulo {
+
+	public static void main(String[] args) {
+		
+	}
+	
+	public void calculaPerimetro(int alto, int ancho) {
+		
+	}
+}
