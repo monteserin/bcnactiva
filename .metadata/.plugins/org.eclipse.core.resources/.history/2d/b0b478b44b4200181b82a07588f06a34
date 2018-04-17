@@ -1,0 +1,9 @@
+package com.pablomonteserin.funciones;
+
+public class EjercicioCosteAvion {
+
+	public static void main(String[] args) {
+
+	}
+
+}
