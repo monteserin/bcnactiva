@@ -1,0 +1,15 @@
+package com.pablomonteserin.funciones;
+
+import java.util.Scanner;
+
+public class EjercicioCosteAvion {
+
+	public static void main(String[] args) {
+		
+	}
+
+	
+	public void saludar() {
+		System.out.println("hola");
+	}
+}

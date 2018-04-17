@@ -1,0 +1,15 @@
+package com.pablomonteserin.funciones;
+
+public class Borrame {
+	
+	int edad = 5;
+	public static void main(String[] args) {
+		saludar();
+		
+	}
+
+	
+	public  void saludar() {
+		System.out.println("hola");
+	}
+}

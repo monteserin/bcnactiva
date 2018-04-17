@@ -17,7 +17,7 @@ public class EjercicioCosteAvion {
 		int resultado2 = costeViaje.costeAvion(destino);
 		int resultado3 = costeViaje.costeAlquilerCoche(numNoches);
 		
-		int sumaCostes = resultado1 + resultado2;
+		int sumaCostes = resultado1 + resultado2 + resultado3;
 		System.out.println("Coste total: " + sumaCostes);
 	}
 	
