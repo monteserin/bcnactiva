@@ -1,0 +1,13 @@
+package com.pablomonteserin.ahorcado;
+
+public class Ahorcado {
+
+	public static void main(String[] args) {
+		String [] palabras = {"elefante", "amor", "casa"};
+		int posicionAleatoria = (int) Math.floor(Math.random() * palabras.length);
+		String palabra = palabras[posicionAleatoria];
+		
+		
+	}
+
+}
