@@ -1,0 +1,14 @@
+package com.pablomonteserin.funciones;
+
+public class TresEnRaya {
+	
+	public static void main(String[] args) {
+		String [] tablero = {"_","_","_","_","_","_","_","_","_"};
+	}
+	
+	public void showTablero(String [] tablero) {
+		
+	}
+	
+
+}

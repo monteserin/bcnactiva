@@ -1,0 +1,12 @@
+package com.pablomonteserin.modificadores;
+
+public class Main {
+	public static void name() {
+		Main main = new Main();
+		main.caminar();
+	}
+	
+	private void caminar() {
+		System.out.println("andando");
+	}
+}

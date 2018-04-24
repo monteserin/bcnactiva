@@ -1,0 +1,13 @@
+package com.pablomonteserin.interfaces;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// SoundMaster s = new SoundMaster();
+		// s.playSound("hakunamatata.wav");
+		
+		SoundPro p = new SoundPro();
+		p.tocarSonido(url);
+	}
+
+}

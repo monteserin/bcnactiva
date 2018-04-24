@@ -1,0 +1,12 @@
+package com.pablomonteserin.funciones;
+
+import com.pablomonteserin.modificadores.Main;
+
+public class Persona extends Main{
+	
+	
+	Persona(String nombre){
+		
+	}
+	
+}

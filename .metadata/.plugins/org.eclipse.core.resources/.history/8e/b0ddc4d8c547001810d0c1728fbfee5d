@@ -1,0 +1,10 @@
+package com.pablomonteserin.funciones;
+
+public class Personita extends Persona{
+
+	public int gradoDulzura;
+	
+	public Personita(){
+		System.out.println("soy una personita");
+	}
+}

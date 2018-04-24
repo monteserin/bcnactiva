@@ -1,0 +1,14 @@
+package com.pablomonteserin.funciones;
+
+import com.pablomonteserin.modificadores.Main;
+
+public class Persona {
+	public String nombre;
+	
+	public Persona(String nombre){
+		this.nombre = nombre
+		System.out.println("soy una persona");
+	}
+
+	
+}

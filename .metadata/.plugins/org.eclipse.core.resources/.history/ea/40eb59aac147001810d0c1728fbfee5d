@@ -1,0 +1,14 @@
+package com.pablomonteserin.funciones;
+
+import com.pablomonteserin.modificadores.Main;
+
+public class Persona extends Main{
+	
+	Persona(){
+		System.out.println("hola");
+	}
+	
+	public void caminar() {
+		System.out.println("andando");
+	}
+}

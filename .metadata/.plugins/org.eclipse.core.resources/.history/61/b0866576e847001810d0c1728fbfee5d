@@ -1,0 +1,5 @@
+package coninterfaces;
+
+public class Perro extends Animal{
+	
+}

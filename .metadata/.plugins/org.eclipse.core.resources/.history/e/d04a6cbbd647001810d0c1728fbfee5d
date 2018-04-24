@@ -1,0 +1,11 @@
+package com.pablomonteserin.modificadores;
+
+public class Personita extends Persona{
+
+	public int gradoDulzura;
+	String nombre;
+	public Personita(String nombre){
+		super(nombre);
+		System.out.println("soy una personita");
+	}
+}

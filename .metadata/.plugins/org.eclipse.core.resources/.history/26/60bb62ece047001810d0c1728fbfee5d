@@ -1,0 +1,11 @@
+package com.pablomonteserin.interfaces;
+
+public class IReproducirAudio implements ReproducirAudio {
+
+	@Override
+	public void reproducirSonido(String url) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

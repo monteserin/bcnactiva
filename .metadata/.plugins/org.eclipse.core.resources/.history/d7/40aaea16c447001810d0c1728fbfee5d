@@ -1,0 +1,14 @@
+package com.pablomonteserin.modificadores;
+
+import com.pablomonteserin.funciones.Persona;
+
+public class Main {
+	
+
+	public static void main(String args[]) {
+		Persona persona = new Persona("Juan");	
+	
+	}
+	
+	
+}

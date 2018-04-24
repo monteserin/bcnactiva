@@ -1,0 +1,7 @@
+package com.pablomonteserin.modificadores;
+
+public class Persona {
+	default void caminar() {
+		System.out.println("andando");
+	}
+}

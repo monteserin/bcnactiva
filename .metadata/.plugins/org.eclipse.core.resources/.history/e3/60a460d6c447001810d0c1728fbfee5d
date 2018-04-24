@@ -1,0 +1,16 @@
+package com.pablomonteserin.modificadores;
+
+import com.pablomonteserin.funciones.Persona;
+import com.pablomonteserin.funciones.Personita;
+
+public class Main {
+	
+
+	public static void main(String args[]) {
+		
+		Personita p = new Personita();
+	
+	}
+	
+	
+}

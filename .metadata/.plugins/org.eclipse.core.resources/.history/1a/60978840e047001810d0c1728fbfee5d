@@ -1,0 +1,11 @@
+package com.pablomonteserin.interfaces;
+
+public class Main {
+
+	public static void main(String[] args) {
+		SoundMaster s = new SoundMaster();
+		soundMaster.
+
+	}
+
+}

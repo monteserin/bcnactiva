@@ -1,0 +1,15 @@
+package com.pablomonteserin.modificadores;
+
+import com.pablomonteserin.funciones.Persona;
+
+public class Main {
+	public static void name() {
+		Persona persona = new Persona();
+		
+		
+		persona.caminar();
+		
+	}
+	
+	
+}

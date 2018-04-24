@@ -1,0 +1,32 @@
+package com.pablomonteserin.funciones;
+
+import java.util.Scanner;
+
+public class TresEnRaya {
+	
+	public static void main(String[] args) {
+		String [] tablero = {"_","_","_","_","_","_","_","_","_"};
+		TresEnRaya game = new TresEnRaya();
+		game.showTablero(tablero);
+		
+		
+		game.juegaPlayer("X", tablero);
+		
+	}
+	
+	public void showTablero(String [] tablero) {
+		System.out.println(tablero[0]+" | "+tablero[1]+" | "+tablero[2]);
+		System.out.println(tablero[3]+" | "+tablero[4]+" | "+tablero[5]);
+		System.out.println(tablero[6]+" | "+tablero[7]+" | "+tablero[8]);
+
+	}
+	
+	public void juegaPlayer(String ficha, String[]tablero) {
+		Scanner lector = new Scanner(System.in);
+		int pos = lector.nextInt();
+		tablero[pos] = ficha;
+		showTablero();
+	}
+	
+
+}
