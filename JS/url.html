@@ -1,7 +1,71 @@
-<input type="radio" name="cosa">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function calcular_coste(){
+	var num_noches = document.getElementById("noches").value;
+	var destino = document.getElementById("city").value;
+	var resultado1 = coste_hotel(num_noches);
+	var resultado2 = coste_avion(destino, num_noches);
+	var resultado3 = coste_alquiler_coche(num_noches);
 
-<input type="radio" name="cosa">
-<input type="radio" name="cosa">
-<input type="radio" name="cosa">
-<input type="radio" name="cosa">
-<input type="radio" name="cosa">
+	var rTotal = resultado1 + resultado2 + resultado3;
+	document.getElementById("result").value = rTotal;
+}
+
+
+function coste_hotel(n){
+	return 140*n;
+}
+
+function coste_avion(ciudad, n){
+	var coste =0;
+	if(ciudad=="Oviedo"){
+		coste = 15;
+	}else if(ciudad=="Tokyo"){
+		coste = 700;
+	}else if(ciudad=="Madrid"){
+		coste = 90;
+	}else if(ciudad=="Barcelona"){
+		coste = 90;
+	}
+
+	if(n>3){
+		coste = coste*0.9;
+	}
+
+	return coste;
+}
+
+function coste_alquiler_coche(num){
+	var coste = 40*num;
+	if(num>7){
+		coste = coste-50;
+	}else if(num>3){
+		coste = coste-20;
+	}
+	return coste;
+}
+	</script>
+	<form action="">
+		
+<input type="text" id="noches">
+
+<select id="city">
+	<option value="Tokyo">Tokyo</option>
+	<option value="Barcelona">Barcelona</option>
+	<option value="Madrid">Madrid</option>
+	<option value="Oviedo">Oviedo</option>
+</select>
+
+
+<input type="button" id="btn" onclick="calcular_coste()" value="calcular">
+
+<input type="text" id="result">
+	</form>
+</body>
+</html>
