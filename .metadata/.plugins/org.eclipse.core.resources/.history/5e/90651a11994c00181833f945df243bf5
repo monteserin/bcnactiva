@@ -26,7 +26,6 @@ public class Main {
 				
 				boolean tieneNumero = nombre.matches(".*\\d+.*");
 				if(tieneNumero) {
-					System.out.println("El nombre introducido tiene numero");
 					continue;
 				}
 				

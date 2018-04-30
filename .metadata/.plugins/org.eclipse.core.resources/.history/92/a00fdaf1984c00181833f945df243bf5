@@ -20,17 +20,7 @@ public class Main {
 			int opcion = lector.nextInt();
 			if (opcion == 1) {
 				System.out.println("Introduce el nombre");
-				
-				
 				String nombre = lector.next();
-				
-				boolean tieneNumero = nombre.matches(".*\\d+.*");
-				if(tieneNumero) {
-					System.out.println("El nombre introducido tiene numero");
-					continue;
-				}
-				
-				
 				System.out.println("Introduce la edad");
 				int edad = lector.nextInt();
 				servicio.insertarAlumno(nombre, edad);
