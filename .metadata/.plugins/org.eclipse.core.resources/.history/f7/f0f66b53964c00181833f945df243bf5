@@ -1,0 +1,33 @@
+package com.pablomonteserin.crud;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("¿Qué quieres hacer?");
+		System.out.println("1 - Insertar un nuevo alumno");
+		System.out.println("2 - Eliminar un alumno");
+		System.out.println("3 - Modificar un alumno");
+		System.out.println("4 - Mostrar los alumnos almacenados");
+		Servicio servicio = new Servicio();
+		
+		Scanner lector = new Scanner(System.in);
+		int opcion = lector.nextInt();
+		if (opcion == 1) {
+			System.out.println("Introduce el nombre");
+			String nombre = lector.next();
+			System.out.println("Introduce la edad");
+			int edad = lector.nextInt();
+			servicio.insertarAlumno(nombre, edad);
+			
+		} else if (opcion == 2) {
+
+		} else if (opcion == 3) {
+
+		} else if (opcion == 4) {
+			List<Alumno> alumnos =servicio.getAlumnos();
+		}
+	}
+
+}

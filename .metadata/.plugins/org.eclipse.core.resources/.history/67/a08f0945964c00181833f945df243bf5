@@ -1,0 +1,17 @@
+package com.pablomonteserin.crud;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Servicio {
+	List<Alumno> alumnos = new ArrayList<Alumno>();
+	
+		public void insertarAlumno(String nombre, int edad) {
+			Alumno alumno = new Alumno(nombre, edad);
+			alumnos.add(alumno);
+		}
+		
+		public List<Alumno> getAlumnos(){
+			return alumnos
+		}
+}

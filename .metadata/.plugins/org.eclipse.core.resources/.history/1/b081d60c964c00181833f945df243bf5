@@ -1,0 +1,12 @@
+package com.pablomonteserin.crud;
+
+public class Servicio {
+
+		public void insertarAlumno(String nombre, int edad) {
+			Alumno alumno = new Alumno(nombre, edad);
+			
+			
+			alumno.setNombre(nombre);
+			alumno.setEdad(edad);
+		}
+}

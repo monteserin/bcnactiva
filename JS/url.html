@@ -1,71 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<script>
-		function calcular_coste(){
-	var num_noches = document.getElementById("noches").value;
-	var destino = document.getElementById("city").value;
-	var resultado1 = coste_hotel(num_noches);
-	var resultado2 = coste_avion(destino, num_noches);
-	var resultado3 = coste_alquiler_coche(num_noches);
-
-	var rTotal = resultado1 + resultado2 + resultado3;
-	document.getElementById("result").value = rTotal;
-}
-
-
-function coste_hotel(n){
-	return 140*n;
-}
-
-function coste_avion(ciudad, n){
-	var coste =0;
-	if(ciudad=="Oviedo"){
-		coste = 15;
-	}else if(ciudad=="Tokyo"){
-		coste = 700;
-	}else if(ciudad=="Madrid"){
-		coste = 90;
-	}else if(ciudad=="Barcelona"){
-		coste = 90;
+<style>
+	#capa{
+		background: pink;
+		width:600px;
+		height: 400px;
+		position: relative;
 	}
 
-	if(n>3){
-		coste = coste*0.9;
-	}
+</style>
 
-	return coste;
+<div id="capa"></div>
+
+<script>
+var texto = "";
+
+for(var i=0; i<100; i++){
+	var y = Math.random()*400;
+	var x = Math.random()*600;
+	texto = texto + '<p style="position:absolute; top: '+y+'px; left: '+x+'">Monteserín Forever</p>'
 }
 
-function coste_alquiler_coche(num){
-	var coste = 40*num;
-	if(num>7){
-		coste = coste-50;
-	}else if(num>3){
-		coste = coste-20;
-	}
-	return coste;
-}
-	</script>
-	<form action="">
-		
-<input type="text" id="noches">
+document.getElementById("capa").innerHTML = texto
 
-<select id="city">
-	<option value="Tokyo">Tokyo</option>
-	<option value="Barcelona">Barcelona</option>
-	<option value="Madrid">Madrid</option>
-	<option value="Oviedo">Oviedo</option>
-</select>
-
-
-<input type="button" id="btn" onclick="calcular_coste()" value="calcular">
-
-<input type="text" id="result">
-	</form>
-</body>
-</html>
+</script>
