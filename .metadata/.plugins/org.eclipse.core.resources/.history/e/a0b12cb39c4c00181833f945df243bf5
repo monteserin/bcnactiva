@@ -1,0 +1,13 @@
+package com.pablomonteserin.pruebas;
+
+public class Punto2D {
+
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof Punto2D))
+			return false;
+		Punto2D punto = (Punto2D) o;
+		return (x == punto.x) && (y == punto.y);
+	}
+
+}
