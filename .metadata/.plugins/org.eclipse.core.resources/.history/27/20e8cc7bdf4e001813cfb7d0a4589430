@@ -1,0 +1,14 @@
+package com.pablomonteserin.depositos;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Deposito d1 = new Deposito("d1", 3,3,4);
+		Deposito d2 = new Deposito("d2", 4,3,3);
+
+	}
+
+}
