@@ -1,0 +1,24 @@
+<script>
+	var enteros = [4,3,5,3,-2,4,5,-5,-2,-7]
+	var sumaAcumuladaPositivos=0;
+	var sumaAcumuladaNegativos=0;
+	var cantidadPositivos=0;
+	var cantidadNegativos=0;
+
+	for(i in enteros){
+		if(enteros[i]>0){
+				sumaAcumuladaPositivos += enteros[i];
+				cantidadPositivos++;
+		}else if(enteros[i]<0){
+				sumaAcumuladaNegativos += enteros[i];
+				cantidadNegativos++;
+
+		}
+
+	}
+	var mediaPositivos = sumaAcumuladaPositivos/cantidadPositivos;
+	var mediaNegativos = sumaAcumuladaNegativos/cantidadNegativos;
+
+	document.write(mediaPositivos);
+	document.write(mediaNegativos);
+</script>
