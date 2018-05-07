@@ -1,7 +1,0 @@
-package com.pablomonteserin.modificadores;
-
-public class Persona {
-	public void caminar() {
-		System.out.println("andando");
-	}
-}

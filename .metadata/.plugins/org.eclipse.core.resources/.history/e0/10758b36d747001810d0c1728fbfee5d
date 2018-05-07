@@ -1,9 +1,0 @@
-package com.pablomonteserin.modificadores;
-
-public class Persona {
-	public void bailar() {
-		System.out.println("uuuu que bien bailo");
-	}
-
-	
-}

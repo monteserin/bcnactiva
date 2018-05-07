@@ -1,6 +1,0 @@
-package coninterfaces;
-
-public class Vaca extends Animal {
-
-	
-}

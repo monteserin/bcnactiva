@@ -1,0 +1,23 @@
+<style>
+#capa{
+	background: url(Bluemap.jpg);
+	width:600px;
+	height: 400px;
+	position: relative;
+}
+</style>
+
+<div id="capa"></div>
+
+<script>
+	var texto = "";
+	
+	for(var i=0; i<100; i++){
+		var y = Math.random()*400;
+		var x = Math.random()*600;
+		texto = texto + '<img src="goldCoin.png"  style="position:absolute; top: '+y+'px; left: '+x+'" />'
+	}
+
+	document.getElementById("capa").innerHTML = texto
+
+</script>

@@ -1,7 +1,0 @@
-package coninterfaces;
-
-public class Perro extends Animal{
-	Perro(String sonido){
-		this.sonido = sonido;
-	}
-}

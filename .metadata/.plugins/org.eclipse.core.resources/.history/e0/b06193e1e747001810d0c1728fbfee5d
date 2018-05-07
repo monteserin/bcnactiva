@@ -1,5 +1,0 @@
-package coninterfaces;
-
-public interface IAnimal {
-
-}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.pablomonteserin.depositos&apos; to &apos;monteserin/src/com.pablomonteserin.depositos&apos;&#x0D;&#x0A;- Original project: &apos;monteserin&apos;&#x0D;&#x0A;- Destination element: &apos;monteserin/src/com.pablomonteserin.depositos&apos;&#x0D;&#x0A;- Original element: &apos;monteserin/src/com.pablomonteserin.depositos&apos;" description="Copy package" destination="/src&lt;com.pablomonteserin.depositos" element1="/src&lt;com.pablomonteserin.depositos" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1525360690401" version="1.0"/>
+</session>

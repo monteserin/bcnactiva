@@ -1,5 +1,0 @@
-package com.pablomonteserin.funciones;
-
-public class Personita extends Persona{
-
-}

@@ -1,7 +1,0 @@
-package com.pablomonteserin.funciones;
-
-public class Persona extends Main{
-	 void caminar() {
-		System.out.println("andando");
-	}
-}
