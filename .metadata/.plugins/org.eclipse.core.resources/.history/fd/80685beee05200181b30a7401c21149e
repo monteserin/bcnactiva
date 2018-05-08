@@ -1,0 +1,16 @@
+package com.pablomonteserin.comparacion;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String txt1 = "aa";
+		String txt2 = "bb";
+		
+		
+		if(txt1.compareTo(txt2)<0) {
+			System.out.println("txt1 es menor que txt2");
+		}
+
+	}
+
+}

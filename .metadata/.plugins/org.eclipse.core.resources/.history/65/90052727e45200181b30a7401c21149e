@@ -1,0 +1,25 @@
+package com.pablomonteserin.comparacion;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Servicios {
+	public void getPersonaMayor(Map personas) {
+		Collection collection = personas.values();
+		Iterator<Persona> it = collection.iterator();
+
+		Persona p1 = it.next();
+		Persona p2 = it.next();
+		
+		if(p1.getFechaNacimiento().getTime()> p2.getFechaNacimiento().getTime()) {
+			
+		}
+			System.out.println(((Persona)it.next()).getNombre());
+
+	}
+
+	public void getPrimerNombre(Map personas) {
+
+	}
+}

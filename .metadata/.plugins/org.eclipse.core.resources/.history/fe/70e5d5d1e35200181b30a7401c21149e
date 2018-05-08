@@ -1,0 +1,11 @@
+package com.pablomonteserin.comparacion;
+
+public class Servicios {
+	public void getPersonaMayor() {
+
+	}
+
+	public void getPrimerNombre() {
+
+	}
+}

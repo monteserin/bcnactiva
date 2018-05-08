@@ -1,0 +1,13 @@
+package com.pablomonteserin.depositosConstructor;
+
+import java.io.BufferedReader;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Scanner lector = new Scanner(System.in);
+		
+		BufferedReader fr = new BufferedReader();
+	}
+
+}

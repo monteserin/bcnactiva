@@ -1,0 +1,17 @@
+package com.pablomonteserin.comparacion;
+
+import java.util.Map;
+
+public class Servicios {
+	public void getPersonaMayor(Map personas) {
+		Collection collection = map.values();
+		Iterator it = collection.iterator();
+		while(it.hasNext()){
+			System.out.println(((Persona)it.next()).getNombre());
+		}
+	}
+
+	public void getPrimerNombre(Map personas) {
+
+	}
+}

@@ -1,18 +1,28 @@
 package com.pablomonteserin.depositosConstructor;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Deposito d = new Deposito(10,15);
-		
-		d.setLargo(20);
-	//	d.largo = 60;
-		
+		int i = 2;
+		int j = 2;
+		System.out.println("antes");
+		try{
+			System.out.println(i/j);
+		}catch (ArithmeticException e){
+			System.out.println("en catch1");
+			e.printStackTrace();
+		}catch(Exception e){
+			System.out.println("en catch2");
+		}catch(Throwable t){
+			System.out.println("en catch3");
+		}finally{
+			System.out.println("en finally");
+		}
+		System.out.println("despues");
 	}
 
 }

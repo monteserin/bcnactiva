@@ -1,0 +1,8 @@
+package com.pablomonteserin.excepciones;
+
+public class Servicios {
+
+	public double getPrecioConIva(int numero) {
+		double valorDevuelto =  numero*1.16d;
+	}
+}

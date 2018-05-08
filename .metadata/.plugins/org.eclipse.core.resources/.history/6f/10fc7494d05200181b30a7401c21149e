@@ -1,0 +1,9 @@
+package com.pablomonteserin.excepciones;
+
+public class Main {
+	public static void Main(String args[]) {
+		Servicios servicios = new Servicios();
+		int valor = servicios.getPrecioConIva();
+		System.out.println(valor);
+	}
+}

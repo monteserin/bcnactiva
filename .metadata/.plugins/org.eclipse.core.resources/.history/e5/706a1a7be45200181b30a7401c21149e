@@ -1,0 +1,14 @@
+package com.pablomonteserin.comparacion;
+
+import java.text.SimpleDateFormat;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy");
+		Persona p1 = new Persona("Juan", "1111", );
+
+	}
+
+}

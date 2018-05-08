@@ -1,0 +1,21 @@
+package com.pablomonteserin.depositosConstructor;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Scanner lector = new Scanner(System.in);
+		
+		BufferedReader fr = new BufferedReader(new InputStreamReader(System.in));
+		
+		String texto = fr.readLine();
+	}
+	
+	
+	public void leerCosas() {
+		
+	}
+
+}

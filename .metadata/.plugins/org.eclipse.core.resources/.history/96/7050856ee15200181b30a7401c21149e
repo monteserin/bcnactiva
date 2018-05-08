@@ -1,0 +1,27 @@
+package com.pablomonteserin.comparacion;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String txt1 = "Pop";
+		String txt2 = "Bap";
+		
+		
+		Collator usCollator = Collator.getInstance(Locale.US);
+		usCollator.setStrength(Collator.PRIMARY);
+		if( usCollator.compare("abc", "ABC") == 0 ) {
+		    System.out.println("Strings are equivalent");
+		}
+		
+		
+		
+		
+		if(txt1.compareToIgnoreCase (txt2)<0) {
+			System.out.println("txt1 es menor que txt2");
+		}else if(txt1.compareToIgnoreCase (txt2)>0) {
+			System.out.println("txt2 es mayor que txt1");
+		}
+
+	}
+
+}

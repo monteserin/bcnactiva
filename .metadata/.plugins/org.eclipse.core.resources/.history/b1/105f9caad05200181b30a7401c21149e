@@ -1,0 +1,8 @@
+package com.pablomonteserin.excepciones;
+
+public class Servicios {
+
+	public int getPrecioConIva() {
+		return 0;
+	}
+}
