@@ -1,8 +1,0 @@
-package com.pablomonteserin.excepciones;
-
-public class Main {
-	public static void name() {
-		Servicios servicio = new Servicios();
-
-	}
-}

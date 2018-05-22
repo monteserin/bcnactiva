@@ -1,0 +1,71 @@
+package com.pablomonteserin.siniestros;
+
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.query.Query;
+
+
+
+public class MainConsulta {
+
+	public static void main(String[] args) {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Query<Vehiculo> hqlQuery1 = session.createQuery("FROM  Vehiculo");
+		List<Vehiculo> vehiculos = hqlQuery1.list();
+		Iterator<Vehiculo> it = vehiculos.iterator();
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("Listar las matrículas de todos los vehículos");
+		while(it.hasNext()) {
+			Vehiculo v = it.next();
+			System.out.println(v.getMatricula());
+		}
+		
+		
+		System.out.println("========================================");
+		
+		// LA CONSULTA NO DEVUELVE LOS DATOS ORDENADOS
+		Query<Vehiculo> hqlQuery2 = session.createQuery("SELECT v FROM  Vehiculo v ORDER BY v.ruedas");
+		List<Vehiculo> vehiculos2 = hqlQuery1.list();
+		Iterator<Vehiculo> it2 = vehiculos.iterator();
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("Listar la matrícula y la marca de todos los vehículos ordenados por número de ruedas (NO FUNCIONA).");
+
+		while(it2.hasNext()) {
+			Vehiculo v = it2.next();
+			System.out.println(v.getMatricula()+ " - "+ v.getMarca() + " - " + v.getRuedas());
+		}
+		
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		Query<Vehiculo> hqlQuery3 = session.createQuery("SELECT v FROM  Vehiculo v WHERE v.ruedas>2 AND v.asientos>2");
+		List<Vehiculo> vehiculos3 = hqlQuery1.list();
+		Iterator<Vehiculo> it3 = vehiculos.iterator();
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("========================================");
+		System.out.println("Listar la matrícula de todos los vehículos que tengan más de dos asientos y más de dos ruedas. No puede salir marca6");
+		while(it3.hasNext()) {
+			Vehiculo v = it3.next();
+			System.out.println(v.getMatricula()+ " - "+ v.getMarca() + " - " + v.getRuedas());
+		}
+		
+		session.close();
+
+	}
+
+}
