@@ -1,0 +1,24 @@
+package com.pablomonteserin.siniestros;
+
+public class VehiculoSiniestro{
+
+	private Vehiculo vehiculo;
+	private int perdida;
+
+	
+	
+	public Vehiculo getVehiculo() {
+		return vehiculo;
+	}
+	public void setVehiculo(Vehiculo vehiculo) {
+		this.vehiculo = vehiculo;
+	}
+	public int getPerdida() {
+		return perdida;
+	}
+	public void setPerdida(int perdida) {
+		this.perdida = perdida;
+	}
+	
+	
+}

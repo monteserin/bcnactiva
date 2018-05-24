@@ -116,7 +116,7 @@ public class MainConsulta {
 		System.out.println("========================================");
 		System.out.println("========================================");
 		System.out.println("========================================");
-		Query<VehiculoSiniestro> hqlQuery7 = session.createQuery("SELECT new com.pablomonteserin.siniestros.VehiculoSiniestro(v, s.perdida) FROM  Vehiculo v JOIN v.siniestros s WHERE s.perdida>1000");
+		Query<VehiculoSiniestro> hqlQuery7 = session.createQuery("SELECT new com.pablomonteserin.siniestros.VehiculoSiniestro(v, perdida) FROM  Vehiculo v JOIN v.siniestros s WHERE s.perdida>1000");
 		List<VehiculoSiniestro> vehiculos7 = hqlQuery7.list();
 		Iterator<VehiculoSiniestro> it7 = vehiculos7.iterator();
 		System.out.println("Listar la matrícula de todos los vehículos que hayan tenido un siniestro con perdida mayor de 1000 euros. Mostrar a cuanto ascendió la pérdida. ");

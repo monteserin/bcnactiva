@@ -1,0 +1,5 @@
+package com.pablomonteserin.siniestros;
+
+public class VehiculoSiniestro extends Vehiculo {
+
+}
