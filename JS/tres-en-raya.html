@@ -4,7 +4,8 @@
 	function btnPulsado(n){
 		turno++;
 		var btn = document.getElementsByTagName("input")[n];
-		if(turno%2==0){
+		if(tablero[n]==""){
+			if(turno%2==0){
 			btn.style.backgroundColor = "red"
 			tablero[n]= "red";
 			var ganador = alguienGano("red");
@@ -15,6 +16,10 @@
 			var ganador = alguienGano("blue");
 			if(ganador==true)alert("enhorabuena Azul")
 		}
+		}else{
+			alert("no me pises malandring")
+		}
+		
 	}
 
 	function alguienGano(param){

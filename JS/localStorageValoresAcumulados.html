@@ -1,0 +1,38 @@
+<script>
+	function salvar(){
+		var n = document.getElementById("n").value;
+
+		var resultado = localStorage.getItem("resultado");
+		
+		if(resultado==null){
+			resultado =0;
+		}
+		resultado= parseInt(resultado)+parseInt(n);
+
+		localStorage.setItem("resultado", resultado)
+		localStorage.setItem("ultimoNumero", n)
+
+	}
+
+	function recuperar(){
+		var resultado = localStorage.getItem("resultado");
+		var ultimoNumero = localStorage.getItem("ultimoNumero");
+
+		alert("resultado: " + resultado + ", ultimoNumero" +ultimoNumero )
+	}
+
+
+	function borraloTodo(){
+		localStorage.clear();
+
+	}
+</script>
+
+
+<input type="text" id="n">
+
+<input type="button" onclick="salvar()" value="salvar">
+
+<input type="button" onclick="recuperar()" value="recuperar">
+
+<input type="button" onclick="borraloTodo()" value="Borrar">
