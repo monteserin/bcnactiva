@@ -1,0 +1,16 @@
+<script>
+	function salvar(){
+		var texto = document.getElementById("txt").value;
+		localStorage.setItem("valorSalvado", texto)
+	}
+	function recuperar(){
+		var texto = localStorage.getItem("valorSalvado");
+		alert(texto)
+	}
+</script>
+
+
+<input type="text" id="txt">
+<input type="button" onclick="salvar()" value="salvar">
+
+<input type="button" onclick="recuperar()" value="recuperar">

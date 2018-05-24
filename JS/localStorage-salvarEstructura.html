@@ -1,0 +1,48 @@
+<script>
+	function salvar(){
+		var nombre = document.getElementById("nombre").value;
+		var edad = document.getElementById("edad").value;
+
+		var persona ={
+			"nombre": nombre,
+			"edad":edad
+		}
+
+		var personas = localStorage.getItem("personas");
+		//JSON.parse() convierte un texto en un objeto
+		personas = JSON.parse(personas);
+
+		//si en el local storage no había almacenado ningún array de personas, inicializo un nuevo array de personas
+		if(personas==null){
+			personas =[];
+		}
+		personas.push(persona);
+
+	// el método stringify convierte un objeto en un texto. Este paso es necesario porque en el localStorage sólo es posible almacenar texto
+		alert(personas)
+		personas = JSON.stringify(personas);
+		alert(personas)
+		localStorage.setItem("personas", personas)
+	}
+
+	function recuperar(){
+		var texto = localStorage.getItem("personas");
+		var personas = JSON.parse(texto);
+
+
+
+var resultado="";
+		for(var i=0; i<personas.length; i++){
+			resultado += personas[i].nombre + " - "+personas[i].edad+" ***** "
+		}
+		alert(resultado)
+	}
+</script>
+
+
+<input type="text" id="nombre">
+<input type="text" id="edad">
+
+<input type="button" onclick="salvar()" value="salvar">
+
+<input type="button" onclick="recuperar()" value="recuperar">
