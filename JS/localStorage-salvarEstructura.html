@@ -37,6 +37,12 @@ var resultado="";
 		}
 		alert(resultado)
 	}
+
+
+	function borraloTodo(){
+		localStorage.clear();
+
+	}
 </script>
 
 
@@ -46,3 +52,5 @@ var resultado="";
 <input type="button" onclick="salvar()" value="salvar">
 
 <input type="button" onclick="recuperar()" value="recuperar">
+
+<input type="button" onclick="borraloTodo()" value="Borrar">

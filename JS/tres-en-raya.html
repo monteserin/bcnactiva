@@ -1,0 +1,64 @@
+<script>
+	var tablero = ["","","","","","","","",""]
+	var turno=0;
+	function btnPulsado(n){
+		turno++;
+		var btn = document.getElementsByTagName("input")[n];
+		if(turno%2==0){
+			btn.style.backgroundColor = "red"
+			tablero[n]= "red";
+			var ganador = alguienGano("red");
+			if(ganador==true)alert("enhorabuena Rojo")
+		}else{
+			btn.style.backgroundColor = "blue"
+			tablero[n]="blue";
+			var ganador = alguienGano("blue");
+			if(ganador==true)alert("enhorabuena Azul")
+		}
+	}
+
+	function alguienGano(param){
+if(tablero[0]==param && tablero[1]==param && tablero[2]==param){
+		return true;
+	}else if(tablero[3]==param && tablero[4]==param && tablero[5]==param){
+		return true;
+	}else if(tablero[6]==param && tablero[7]==param && tablero[8]==param){
+		return true;
+	}else if(tablero[0]==param && tablero[3]==param && tablero[6]==param){
+		return true;
+	}else if(tablero[1]==param && tablero[4]==param && tablero[7]==param){
+		return true;
+	}else if(tablero[2]==param && tablero[5]==param && tablero[8]==param){
+		return true;
+	}else if(tablero[0]==param && tablero[4]==param && tablero[8]==param){
+		return true;
+	}else if(tablero[2]==param && tablero[4]==param && tablero[6]==param){
+		return true;
+	}
+	}
+
+</script>
+
+<style>
+	input{
+		width:200px;
+		height: 200px
+	}
+	#tablero{
+		width: 600px;
+		font-size: 0
+	}
+
+</style>
+
+<div id="tablero">
+	<input type="button" onclick="btnPulsado(0)">
+	<input type="button" onclick="btnPulsado(1)">
+	<input type="button" onclick="btnPulsado(2)">
+	<input type="button" onclick="btnPulsado(3)">
+	<input type="button" onclick="btnPulsado(4)">
+	<input type="button" onclick="btnPulsado(5)">
+	<input type="button" onclick="btnPulsado(6)">
+	<input type="button" onclick="btnPulsado(7)">
+	<input type="button" onclick="btnPulsado(8)">
+</div>
