@@ -1,0 +1,29 @@
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+></script>
+
+<script>
+	$(document).ready(inicializar);
+
+	function inicializar(){
+		var aleatorio = Math.floor(Math.random()*3);
+
+		$("#fotoAbajo").attr("src",  "tuxes/"+aleatorio+".png")
+		$(".btn").on('click', btnPulsado);
+	}
+
+	function btnPulsado(){
+		if($(this).attr("src") == $("#fotoAbajo").attr("src")){
+			alert("exito")
+		}else{
+			alert("fracaso")
+		}
+	}
+</script>
+
+
+<img class="btn" src="tuxes/0.png" >
+<img class="btn" src="tuxes/1.png" >
+<img class="btn" src="tuxes/2.png" >
+
+<img id="fotoAbajo" >
