@@ -2,6 +2,7 @@ package com.pablomonteserin;
 
 import java.io.IOException;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -42,8 +43,31 @@ public class Controlador extends HttpServlet {
 	}
 	
 	 resultadoSession = resultadoSession + resultadoRequest;
+	 
+	 
+	 
+	 
+	 
+	 
+		ServletContext contexto = request.getServletContext();
+		
+		
+		int resultadoContexto = 0;
+		if(contexto.getAttribute("resultadoContexto")!=null) {
+			resultadoContexto=(int) contexto.getAttribute("resultadoContexto");
+		}
+		
+		resultadoContexto = resultadoContexto + resultadoRequest;
+		 
+		 
+		 
+	 
+	 
 	 request.setAttribute("resultadoRequest", resultadoRequest);
 	 session.setAttribute("resultadoSession", resultadoSession);
+	 contexto.setAttribute("resultadoContexto", resultadoContexto);
+	 
+	 
 	 
 	 request.getRequestDispatcher("index.jsp").forward(request, response);
 

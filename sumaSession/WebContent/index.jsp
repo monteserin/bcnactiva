@@ -20,6 +20,9 @@
 
 <input type="text" value="${resultadoSession}">
 
+<input type="text" value="${resultadoContexto}">
+
+
 </form>
 </body>
 </html>

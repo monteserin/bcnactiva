@@ -24,7 +24,6 @@ INDEX VERSION 1.130+C:\Users\Administrador\eclipse-workspace\.metadata\.plugins\
 309391372.index
 3333250735.index
 1093475797.index
-117202476.index
 4077371761.index
 2575011535.index
 987771432.index
