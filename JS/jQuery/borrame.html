@@ -1,66 +1,129 @@
-<style>
-	.container{
-		width: 1000px;
-		margin: auto;
-		background: paleGreen;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+			<meta name="description" content="Ejemplo de como hacer una galería de fotos con HTML y CSS que muestra una leyenda haciendo una transición animada con un texto informativo de la imagen">
 
+	<title>Galería de fotos | Pablo Monteserín</title>
 
-	.box img{
-		width: 80%
-	}
-</style>
+	<style type="text/css">
+		.negro{
+			position: relative;
+			background: black;
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+		}
+		.cosas{
+			width: 100%;
+			height: 100%;
+			transition:1s;
+			position: absolute;
+			opacity: 0.5;
+			top: 200px;
+		}
+		p{color: white; font-weight: bold;position: absolute; opacity: 0; transition:1s; text-align: center; width: 100%}
+		.negro:hover p{opacity: 1}
+		.negro:hover .cosas{opacity: 1; top:0;}
+	</style>
 
-<div class="container">
+</head>
+<body>
+<h1>Galería de fotos hecha con jQuery</h1>
 	
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
+	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
 
-<div class="box">
-	<h1>titulo</h1>
-	<p>fasdfasdfasdfs</p>
-	<img src="http://placehold.it/300x300" alt="">
-</div>
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
 
-</div>
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>	<div class="negro">
+		<img class="cosas" src="http://dummyimage.com/600x300">
+		<p>Foto de elefante</p>
+
+	</div>
+	
+</body>
+</html>
+
+
