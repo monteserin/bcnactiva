@@ -1,0 +1,33 @@
+<script>
+	var usuarios = [
+	{
+        nombre: "juan",
+        edad: 35
+    },
+ 
+    {
+        nombre: "yerma",
+        edad: 33
+    }
+]
+
+var url = new URL(location.href);
+var parametro = url.searchParams.get("p");
+alert(usuarios[parametro].nombre)
+
+
+function guardar(){
+	var precio = document.getElementById("precio").value
+	localStorage.setItem("producto"+parametro, precio)
+}
+
+function recuperar(){
+	var precioRecuperado = localStorage.getItem("producto"+parametro)
+	alert(precioRecuperado)
+}
+</script>
+
+
+<input type="text" id="precio">
+<input type="button" onclick="guardar()" value="salvar">
+<input type="button" onclick="recuperar()" value="recuperar">
