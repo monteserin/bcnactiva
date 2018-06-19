@@ -1,12 +1,25 @@
-<script>	
-var variableEntera = prompt("Introduce un número")
+<form action="" id="formulario">
+<table>
+	<tr>
+		<td><input type="text" id="titulo1"></td>
+		<td><input onclick="modificar(1)" value="modificar" type="button" id="titulo"></td>
+	</tr>
 
-var meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+	<tr>
+		<td><input type="text" id="titulo2"></td>
+		<td><input onclick="modificar(2)" value="modificar" type="button" id="titulo"></td>
+	</tr>
+</table>
 
-if(variableEntera>=1 && variableEntera <=12){
-	alert(meses[variableEntera-1])
-}else{
-	alert("fracaso")
-}
+<input type="hidden" name="idAEnviar" id="idAEnviar">
+<input type="hidden" name="tituloAEnviar" id="tituloAEnviar">
 
+</form>
+<script>
+	function modificar(id){
+		document.getElementById("idAEnviar").value = id
+		document.getElementById("tituloAEnviar").value = document.getElementById("titulo"+id).value
+
+		document.getElementById("formulario").submit()
+	}
 </script>
