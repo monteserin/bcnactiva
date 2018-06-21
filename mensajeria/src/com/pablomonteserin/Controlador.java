@@ -85,8 +85,14 @@ public class Controlador extends HttpServlet {
 			mensajeBO.insertarMensajes(mensajes);
 		}else if(action.equals("consulta")) {
 			Usuario u = (Usuario) session.getAttribute("usuario");
-			System.out.println(u.getMensajes().size());
-			System.out.println(u);
+			List<Mensaje> mensajes = mensajeBO.getMensajesUsuarioLogueado(u);
+			
+			request.setAttribute("mensajes", mensajes);
+			
+			pagina = "ver-mensajes.jsp";
+			
+			/*System.out.println(u.getMensajes().size());
+			System.out.println(u);*/
 			
 		}
 		
