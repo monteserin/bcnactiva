@@ -24,7 +24,7 @@ public class LibroAction extends ActionSupport{
 
 	public String muestraLibro() {
 		LibroBO libroBO = new LibroBO();
-libroBO.
+libro = libroBO.getLibro(libro);
 		return SUCCESS;
 	}
 	
