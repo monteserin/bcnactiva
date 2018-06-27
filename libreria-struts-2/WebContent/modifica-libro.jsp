@@ -11,12 +11,19 @@
 <body>
 
 
-	<s:form action="modificacion">
+	<s:form >
 		<s:textfield name="libro.titulo" label="titulo" value="%{libro.titulo}" />
 		<s:textfield name="libro.precio" label="precio" value="%{libro.precio}" />
+		<s:hidden name="libro.id" value="%{libro.id}"/>
+		<s:submit action="modificacion" value="modificame please" />
 		
-		<s:submit />
+				<s:submit action="baja" value="borrame please" />
+		
 	</s:form>
+	
+	
+	
+	
 	
 	
 	

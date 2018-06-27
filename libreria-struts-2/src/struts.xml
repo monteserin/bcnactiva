@@ -3,6 +3,7 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+<constant name="struts.mapper.action.prefix.enabled" value="true"/>
 	<package name="com.pablomonteserin.action" extends="struts-default">
 		<action name="consulta" class="com.pablomonteserin.LibroAction" method="consulta">
 			<result>/consulta.jsp</result>
@@ -13,6 +14,14 @@
 		</action>
 		<action name="consultaLibro" class="com.pablomonteserin.LibroAction" method="muestraLibro">
 			<result>/modifica-libro.jsp</result>
+		</action>
+		
+		<action name="modificacion" class="com.pablomonteserin.LibroAction" method="modificacion">
+			<result>/modifica-libro.jsp</result>
+		</action>
+		
+				<action name="baja" class="com.pablomonteserin.LibroAction" method="baja">
+			<result>/index.jsp</result>
 		</action>
 		
 		

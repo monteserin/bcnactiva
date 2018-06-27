@@ -31,4 +31,22 @@ public class LibroBO {
 		return l;
 	}
 	
+	public void  modifica(Libro libro){
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		session.update(libro);
+		transaction.commit();
+		session.close();
+		
+	}
+	
+	public void  baja(Libro libro){
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		session.remove(libro);
+		transaction.commit();
+		session.close();
+		
+	}
+	
 }

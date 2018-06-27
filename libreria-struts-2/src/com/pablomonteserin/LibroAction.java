@@ -27,7 +27,17 @@ public class LibroAction extends ActionSupport{
 libro = libroBO.getLibro(libro);
 		return SUCCESS;
 	}
+	public String modificacion() {
+		LibroBO libroBO = new LibroBO();
+ libroBO.modifica(libro);
+		return SUCCESS;
+	}
 	
+	public String baja() {
+		LibroBO libroBO = new LibroBO();
+ libroBO.baja(libro);
+		return SUCCESS;
+	}
 	
 	
 	public Libro getLibro() {
