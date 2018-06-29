@@ -23,7 +23,9 @@
 				<action name="baja" class="com.pablomonteserin.LibroAction" method="baja">
 			<result>/index.jsp</result>
 		</action>
-		
+		<action name="carga-combo" class="com.pablomonteserin.LibroAction" method="consulta">
+			<result>/menu-magico.jsp</result>
+		</action>
 		
 		
 	</package>

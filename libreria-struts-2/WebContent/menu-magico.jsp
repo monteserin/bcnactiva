@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,11 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p><a href="alta.jsp">Alta</a></p>
-<p><a href="consulta.action">Consulta</a></p>
 
-<p><a href="carga-combo.action">Carga combo</a></p>
 
+<s:select name="libro.id" list="libros" headerKey="0" headerValue="Select One" listKey="id" listValue="titulo" />
 
 </body>
 </html>

@@ -1,25 +1,22 @@
-<form action="" id="formulario">
-<table>
-	<tr>
-		<td><input type="text" id="titulo1"></td>
-		<td><input onclick="modificar(1)" value="modificar" type="button" id="titulo"></td>
-	</tr>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
 
-	<tr>
-		<td><input type="text" id="titulo2"></td>
-		<td><input onclick="modificar(2)" value="modificar" type="button" id="titulo"></td>
-	</tr>
-</table>
 
-<input type="hidden" name="idAEnviar" id="idAEnviar">
-<input type="hidden" name="tituloAEnviar" id="tituloAEnviar">
+<s:select list="libros" name="libro.id"  headerKey="-1" headerValue="Select One" listKey="id" listValue="titulo" />
 
-</form>
-<script>
-	function modificar(id){
-		document.getElementById("idAEnviar").value = id
-		document.getElementById("tituloAEnviar").value = document.getElementById("titulo"+id).value
 
-		document.getElementById("formulario").submit()
-	}
-</script>
+<select>
+	<option value="4">texto</option>
+
+</select>
+
+</body>
+</html>
