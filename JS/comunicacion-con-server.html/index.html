@@ -1,0 +1,20 @@
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+$.ajax({
+	url: "https://libreria-struts2.herokuapp.com/verLibrosAjax.action",
+	dataType:'JSON',
+	type: "GET",
+	crossDomain: true,
+	contentType: "application/json",
+	success: function(response){
+		console.log(response)
+		for(var i =0; i<response.length; i++){
+			console.log(response[i].titulo)
+		}
+	}
+})
+</script>
