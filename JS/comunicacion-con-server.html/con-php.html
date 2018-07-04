@@ -1,0 +1,26 @@
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+$.ajax({
+	url: "http://localhost/cosas/ajax.php",
+	dataType:'JSON',
+	type: "GET",
+	crossDomain: true,
+	success: function(response){
+		
+		var tabla="<table border='1px'>"
+
+		for(var i =0; i<response.length; i++){
+			tabla = tabla + "<tr><td>"+response[i].nombre+"</td></tr>"
+		}
+		tabla = tabla + "</tabla>"
+$(".tabla").html(tabla)
+
+	}
+})
+</script>
+
+<div class="tabla"></div>
